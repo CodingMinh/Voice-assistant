@@ -4,7 +4,6 @@
 # make sure you install all libraries before running
 # libraries to install: pip install wolframalpha pyttsx3 speechrecognition wikipedia pyjokes feedparser requests twilio clint ecapture beautifulsoup4 pycountry pywhatkit plyer pillow
 # if missing any libraries, install them using pip install LIBRARY_NAME_1 LIBRARY_NAME_2
-# used pyinstaller (pip install pyinstaller) to change this into a downloadable app
 import subprocess
 import wolframalpha
 import pyttsx3
