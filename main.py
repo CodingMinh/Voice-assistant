@@ -2,7 +2,7 @@
 # gaurav: https://www.geeksforgeeks.org/voice-assistant-using-python/
 # sayantanl: https://github.com/01-SayantanI/Assistant
 # make sure you install all libraries before running
-# libraries to install: pip install wolframalpha pyttsx3 speechrecognition wikipedia pyjokes feedparser requests twilio clint ecapture beautifulsoup4 pycountry pywhatkit plyer pillow
+# libraries to install: pip install wolframalpha pyttsx3 speechrecognition wikipedia pyjokes feedparser requests twilio clint ecapture beautifulsoup4 pycountry pywhatkit plyer pillow winshell newsapi-python PyAudio
 # if missing any libraries, install them using pip install LIBRARY_NAME_1 LIBRARY_NAME_2
 import subprocess
 import wolframalpha
@@ -66,7 +66,7 @@ voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id) # [0] if you want male voice, [1] if you want female voice
 
 # change this line to open different browsers like Chrome or Firefox
-opera_path = r"C:\\Users\\Hi Windows 11 23\\AppData\\Local\\Programs\\Opera GX\\launcher.exe"
+opera_path = r"C:\\Users\\Hi Windows 11 23\\AppData\\Local\\Programs\\Opera GX\\opera.exe"
 webbrowser.register('opera', None, webbrowser.BackgroundBrowser(opera_path))
 
 def speak(audio):
@@ -236,7 +236,7 @@ def perform_task():
 			speak(f"Sir, the time is {strTime}")
 
 		elif 'open opera' in query:
-			codePath = r"C:\\Users\\Hi Windows 11 23\\AppData\\Local\\Programs\\Opera GX\\launcher.exe"
+			codePath = r"C:\\Users\\Hi Windows 11 23\\AppData\\Local\\Programs\\Opera GX\\opera.exe"
 			os.startfile(codePath)
 
 		# to allow the voice assistant to send emails, you need to either enable less secure apps or app passwords
@@ -558,7 +558,7 @@ def main():
 		root.destroy()
 
 	# Load and set the background image
-	background_image = Image.open("C:\\Users\\Hi Windows 11 23\\Desktop\Python\\Voice assistant geeksforgeeks + github\\background.jpg")  
+	background_image = Image.open("C:\\Users\\Hi Windows 11 23\\Desktop\Python\\Voice assistant\\background.jpg")  
 	# Replace this with the actual image file path on your computer
 	background_photo = ImageTk.PhotoImage(background_image)
 	background_label = ttk.Label(root, image=background_photo)
@@ -567,7 +567,7 @@ def main():
 	f1 = ttk.Frame(root)
 	f1.pack(pady=100)  # Add some padding to the frame to center it vertically
 
-	image2 = Image.open("C:\\Users\\Hi Windows 11 23\\Desktop\\Python\Voice assistant geeksforgeeks + github\\mic icon.jpg")  
+	image2 = Image.open("C:\\Users\\Hi Windows 11 23\\Desktop\\Python\Voice assistant\\mic icon.jpg")  
 	# Replace this with the actual path to your image on your computer
 	resized_image = image2.resize((240, 240))
 	p2 = ImageTk.PhotoImage(resized_image)
